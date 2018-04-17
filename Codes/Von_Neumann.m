@@ -37,7 +37,7 @@ while err<=diff
     diff=0.0;
     for j=2:m-1
         for k=2:n-1
-            a(j,k)=(a(j-1,k)+a(j,k-1)+a(j,k+1)+a(j+1,k))/4;
+            a(j,k)=(anew(j-1,k)+anew(j,k-1)+anew(j,k+1)+anew(j+1,k))/4;
             z=abs(anew(j,k)-a(j,k));
             if(diff<z)
                 diff=z;
